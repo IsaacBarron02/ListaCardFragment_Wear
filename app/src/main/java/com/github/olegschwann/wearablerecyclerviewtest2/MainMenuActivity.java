@@ -5,6 +5,7 @@ import android.support.wear.widget.WearableLinearLayoutManager;
 import android.support.wear.widget.WearableRecyclerView;
 import android.support.wearable.activity.WearableActivity;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -30,32 +31,45 @@ public class MainMenuActivity extends WearableActivity {
             public void onItemClicked(final Integer menuPosition) {
                 switch (menuPosition) {
                     case 0:
-                        action_1(
+                        /**action_1(
 
-                        );
+                        );*/
+                        Toast.makeText(MainMenuActivity.this,
+                                "Seleccionaste Web FullStack",
+                                Toast.LENGTH_LONG).show();
                         break;
                     case 1:
-                        action_2();
+                        Toast.makeText(MainMenuActivity.this,
+                                "Seleccionaste Javascript",
+                                Toast.LENGTH_LONG).show();
                         break;
                     case 2:
-                        action_3();
+                        Toast.makeText(MainMenuActivity.this,
+                                "Seleccionaste Flutter",
+                                Toast.LENGTH_LONG).show();
                         break;
                 }
             }
         }));
     }
-
+/**
     public void action_1(){
-        Log.i("ACTION", "action_1()");
+        Toast.makeText(MainMenuActivity.this,
+                "Este curso es de Web FullStack",
+                Toast.LENGTH_LONG).show();
     }
 
     public void action_2(){
-        Log.i("ACTION", "action_2()");
+         Toast.makeText(MainMenuActivity.this,
+                 "Este curso es de Javascript",
+                 Toast.LENGTH_LONG).show();
     }
 
     public void action_3(){
-        Log.i("ACTION", "action_3()");
-    }
+         Toast.makeText(MainMenuActivity.this,
+                 "Este curso es de Web Flutter",
+                 Toast.LENGTH_LONG).show();
+    }**/
 }
 
 
